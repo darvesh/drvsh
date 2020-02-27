@@ -159,6 +159,18 @@ footer {
         height: 100%;
     }
 
+    footer {
+        height: 5vh;
+    }
+
+    .footer-keybindings {
+        margin-left: 0.5em;
+    }
+
+    .submit {
+        padding: 10px;
+    }
+
     .footer-text {
         display: none;
     }
