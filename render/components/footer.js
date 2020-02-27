@@ -21,7 +21,7 @@ module.exports = (m, {isSnippet}) => {
 				},
 				isSnippet
 					? ["Fork: Alt + Ctrl + F"]
-					: ["Save: Alt + Ctrl + S"],
+					: ["Save: Ctrl + S"],
 			),
 		),
 

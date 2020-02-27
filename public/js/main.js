@@ -43,9 +43,16 @@ var keyCodes = {
 
 }
 
-function handleKeybindings (e) {
+function handleKeybindings(e) {
+	const binEditor = document.getElementsByClassName('binEditor')[0];
 
-	if(e.ctrlKey && e.altKey) {
+	if (e.ctrlKey) {
+		if (binEditor && (e.keyCode === keyCodes.save)) {
+			// Ctrl + S -> Save
+			e.preventDefault();
+			return document.getElementById('actionButton').click();
+		}
+	} else if (e.ctrlKey && e.altKey) {
 
 		if ((e.keyCode === keyCodes.new) || (e.keyCode === 65)) {
 			// Ctrl + Alt + {N|A} -> New
@@ -53,17 +60,11 @@ function handleKeybindings (e) {
 			return document.getElementById('newButton').click();
 		}
 
-		const binEditor = document.getElementsByClassName('binEditor')[0];
-
-		if(binEditor && (e.keyCode === keyCodes.save)) {
-			// Ctrl + Alt + S -> Save
-			e.preventDefault();
-			return document.getElementById('actionButton').click();
-		} else if (e.keyCode === keyCodes.fork) {
+		if (e.keyCode === keyCodes.fork) {
 			// Ctrl + Alt + F -> Fork
 			e.preventDefault();
 			return document.getElementById('actionButton').click();
-		};
+		}
 
 	}
 
