@@ -1,33 +1,3 @@
-(function onStart () {
-
-	var minMode = JSON.parse(localStorage.getItem('minMode'));
-	toggleMinMode(minMode);
-
-})();
-
-function toggleMinMode (set) {
-
-	var sidebar = document.getElementById('sidebar');
-	var content = document.getElementById('main');
-
-	if (set) {
-		sidebar.style.display = 'none';
-		content.style.maxWidth = '100%';
-		localStorage.setItem('minMode', true);
-	} else {
-		sidebar.style.display = 'block';
-		content.style.maxWidth = '90%';
-		localStorage.setItem('minMode', false);
-	}
-
-}
-
-function toggleSidebar () {
-
-	toggleMinMode(document.getElementById('sidebar').style.display === 'block');
-
-};
-
 var setViewportSize = function () {
 
 	// Set the --vh and --vw custom property to the root of the document
@@ -81,10 +51,6 @@ function handleKeybindings (e) {
 			// Ctrl + Alt + {N|A} -> New
 			e.preventDefault();
 			return document.getElementById('newButton').click();
-		} else if (e.keyCode === keyCodes.minMode) {
-			// Ctrl + Alt + Space -> Toggle Sidebar
-			e.preventDefault();
-			return toggleSidebar();
 		}
 
 		const binEditor = document.getElementsByClassName('binEditor')[0];
