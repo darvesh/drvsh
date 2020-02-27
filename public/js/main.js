@@ -11,7 +11,7 @@ var setViewportSize = function () {
 function addTabs(e) {
 
     /* Can't bother: https://stackoverflow.com/a/18303822 */
-    if (e.keyCode === 9) { // tab was pressed
+    if (e.key === "Tab") { // tab was pressed
         // get caret position/selection
         var start = this.selectionStart;
         var end = this.selectionEnd;
@@ -34,33 +34,24 @@ function addTabs(e) {
 
 }
 
-var keyCodes = {
-
-    new: 78, // N
-    save: 83, // S
-    fork: 70, // F
-    minMode: 32, // Space
-
-}
-
 function handleKeybindings(e) {
     const binEditor = document.getElementsByClassName('binEditor')[0];
 
     if (e.ctrlKey) {
-        if (binEditor && (e.keyCode === keyCodes.save)) {
+        if (binEditor && (e.key === "s")) {
             // Ctrl + S -> Save
             e.preventDefault();
             return document.getElementById('actionButton').click();
         }
     } else if (e.ctrlKey && e.altKey) {
 
-        if ((e.keyCode === keyCodes.new) || (e.keyCode === 65)) {
+        if ((e.key === "n") || (e.key === "a")) {
             // Ctrl + Alt + {N|A} -> New
             e.preventDefault();
             return document.getElementById('newButton').click();
         }
 
-        if (e.keyCode === keyCodes.fork) {
+        if (e.key === "f") {
             // Ctrl + Alt + F -> Fork
             e.preventDefault();
             return document.getElementById('actionButton').click();
