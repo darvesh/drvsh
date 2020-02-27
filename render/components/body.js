@@ -10,7 +10,7 @@ module.exports = (m, { location, content, language }) => {
 		mainContent(m, { location, content, language }),
 		footer(m),
 		isSnippet && m("link", {
-			rel: "stylesheet", href: "/vendor/highlight/styles/obsidian.css"
+			rel: "stylesheet", href: "/vendor/highlight/styles/hybrid.css"
 		}),
 		...scripts.map(x => m("script", {
 			src: x, type: "application/javascript"
