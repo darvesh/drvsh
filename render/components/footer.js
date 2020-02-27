@@ -8,8 +8,7 @@ module.exports = (m, {isSnippet}) => {
                     "New snippet: Ctrl + Alt + N",
                 ],
             ),
-            m("code.footer-text",
-                ["|"]),
+            m("code.footer-text", ["|"]),
             m(
                 "button#actionButton.submit",
                 {
@@ -25,25 +24,38 @@ module.exports = (m, {isSnippet}) => {
             ),
         ),
 
-        m("code.footer-text", "mkr/bin |"),
+        m("code.footer-text", "Memochō |"),
         m("code.footer-text", [
-            "Built by Muthu Kumar",
+            "Built by",
             m(
                 "a",
                 {
                     href: "https://github.com/MKRhere",
-                    target: "blank"
+                    target: "blank",
+                    rel: "noopener"
                 },
                 "@MKRhere"
             ),
-            "| Fork me!"
+            ", Modified by",
+            m(
+                "a",
+                {
+                    href: "https://github.com/SitiSchu",
+                    target: "blank",
+                    rel: "noopener"
+                },
+                "@SitiSchu"
+            ),
+            "|",
+            m(
+                "a",
+                {
+                    href: "https://github.com/mojurasu/memocho",
+                    target: "blank",
+                    rel: "noopener"
+                },
+                "Fork me!"
+            ),
         ]),
-        m(
-            "a.footer-github",
-            {
-                href: "https://github.com/MKRhere/bin",
-                target: "blank"
-            },
-        )
     ]);
 };

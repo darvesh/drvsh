@@ -1,6 +1,6 @@
-# mkr/bin
+# Memochō
 
-A lightweight pastebin/hastebin alternative with no hard frontend JS dependency.
+A lightweight pastebin/hastebin alternative with no hard frontend JS dependency. Fork of [mkr/bin](https://github.com/MKRhere/bin).
 
 ## Starting the app
 
@@ -22,9 +22,9 @@ BIN_MONGO_CSTRING=mongodb://localhost:27017/bin-store \
 	npm start
 ```
 
-## Customising `mkr/bin`
+## Customising `Memochō`
 
-To customise your self-hosted version of `mkr/bin`, you can add these two files to `/custom` at the root directory:
+To customise your self-hosted version of `Memochō`, you can add these two files to `/custom` at the root directory:
 
 ```txt
 └─ custom
