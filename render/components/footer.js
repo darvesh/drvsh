@@ -5,7 +5,7 @@ module.exports = (m, {isSnippet}) => {
 				"a#newButton.submit",
 				{href: "/"},
 				[
-					"New snippet: Alt + Ctrl + N",
+					"New snippet: Ctrl + Alt + N",
 				],
 			),
 			m("code.footer-text",
@@ -20,7 +20,7 @@ module.exports = (m, {isSnippet}) => {
 					form: "codeSnippet",
 				},
 				isSnippet
-					? ["Fork: Alt + Ctrl + F"]
+					? ["Fork: Ctrl + Alt + F"]
 					: ["Save: Ctrl + S"],
 			),
 		),
