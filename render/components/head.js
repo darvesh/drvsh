@@ -18,6 +18,7 @@ module.exports = (m, { title, description, keywords, styles }) => {
 		m('title', title),
 		...meta.map(x => m('meta', x)),
 		...styles.map(x => m('link', { rel: 'stylesheet', href: x })),
+		m('link', { rel: 'stylesheet', href: "https://fonts.googleapis.com/css?family=Fira+Code&display=swap"})
 	]);
 
 };
