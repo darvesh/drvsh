@@ -151,6 +151,9 @@ footer {
 
 .submit:active {
     background: #e52a5773;
+}
+
+.submit:focus {
     outline: none;
 }
 
