@@ -8,7 +8,7 @@ module.exports = (m, {isSnippet}) => {
                     "New snippet: Ctrl + Alt + A",
                 ],
             ),
-            m("code.footer-text", ["|"]),
+            " |",
             m(
                 "button#actionButton.submit",
                 {
