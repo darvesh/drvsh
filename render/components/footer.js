@@ -17,6 +17,7 @@ module.exports = (m, {isSnippet}) => {
 					formaction: isSnippet ? "fork" : "/",
 					formenctype: "application/x-www-form-urlencoded",
 					formmethod: "post",
+					form: "codeSnippet",
 				},
 				isSnippet
 					? ["Fork: Alt + Ctrl + F"]

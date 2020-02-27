@@ -11,7 +11,7 @@ module.exports = (m, { location, content, language }) => {
 		isSnippet && (highlight(m, { content, language }));
 
 	return m(
-		"form.container", { name: "codeSnippet", },
+		"form#codeSnippet.container", { name: "codeSnippet", },
 		[
 			m(
 				"#main.content",
