@@ -40,30 +40,6 @@ module.exports = (m, { location, content, language }) => {
 					content
 				)
 			),
-			m(
-				"#sidebar.controls",
-				{ style: "display: block;" },
-				m(
-					"a#newButton.submit",
-					{ href: "/" },
-					[
-						"New snippet",
-						m(".helper", "Alt + Ctrl + N")
-					],
-				),
-				m(
-					"button#actionButton.submit",
-					{
-						type: "submit",
-						formaction: isSnippet ? "fork" : "/",
-						formenctype: "application/x-www-form-urlencoded",
-						formmethod: "post",
-					},
-					isSnippet
-						? [ "Fork!", m(".helper", "Alt + Ctrl + F") ]
-						: [ "Save!", m(".helper", "Alt + Ctrl + S") ],
-				),
-			),
 		]
 	);
 };

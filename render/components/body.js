@@ -8,7 +8,7 @@ module.exports = (m, { location, content, language }) => {
 
 	return m("body", [
 		mainContent(m, { location, content, language }),
-		footer(m),
+		footer(m, {isSnippet}),
 		isSnippet && m("link", {
 			rel: "stylesheet", href: "/vendor/highlight/styles/hybrid.css"
 		}),
