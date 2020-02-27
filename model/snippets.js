@@ -1,12 +1,12 @@
 module.exports = mongoose =>
-	mongoose.model(
-		'snippets',
-		mongoose.Schema({
+    mongoose.model(
+        'snippets',
+        mongoose.Schema({
 
-			content: {
-				type: String,
-				required: true
-			},
+            content: {
+                type: String,
+                required: true
+            },
 
-		})
-	);
+        })
+    );

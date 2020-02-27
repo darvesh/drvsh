@@ -3,10 +3,10 @@ module.exports = () => (req, res, next) => {
     if (req.body && Object.keys(req.body).length) next();
     req.setEncoding("utf8");
     req.rawText = "";
-    req.on("data", function(chunk) {
+    req.on("data", function (chunk) {
         req.rawText += chunk;
     });
-    req.on("end", function() {
+    req.on("end", function () {
         next();
     });
-}
+};

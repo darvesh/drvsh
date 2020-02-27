@@ -1,203 +1,161 @@
 body {
-
-	padding: 0;
-	margin: 0;
-	background: #000;
-	font-family: "Fira Code", monospace;
-
+    padding: 0;
+    margin: 0;
+    background: #000;
+    font-family: "Fira Code", monospace;
 }
 
 * {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .container {
-
-	display: flex;
-	height: 98vh;
-	height: calc(var(--vh, 1vh) * 98);
-	padding: 0;
-	margin: 0;
-	flex-direction: row-reverse;
-
+    display: flex;
+    height: 98vh;
+    height: calc(var(--vh, 1vh) * 98);
+    padding: 0;
+    margin: 0;
+    flex-direction: row-reverse;
 }
 
 code, #snippet {
-
-	margin: 0;
-
+    margin: 0;
 }
 
 .loc, #snippet {
-	width: 100%;
-	white-space: pre;
-	word-wrap: normal;
-	display: inline-block;
-	word-break: normal;
+    width: 100%;
+    white-space: pre;
+    word-wrap: normal;
+    display: inline-block;
+    word-break: normal;
 }
 
 .controls {
-
-	flex: 1;
-
+    flex: 1;
 }
 
 .content {
-
-	flex: 10;
-	max-height: 100%;
-	max-width: 100%;
-	overflow-wrap: break-word;
-
+    flex: 10;
+    max-height: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
 }
 
 .textarea {
-
-	display: block;
-	outline: 0px solid transparent;
-	background: #000;
-	height: 100%;
-	width: 100%;
-	padding: 3em;
-	overflow-x: auto;
-	overflow-y: auto;
-	color: #EEE;
-	border: none;
-	resize: none;
-	-moz-tab-size : 4;
-	-o-tab-size : 4;
-	tab-size : 4;
-
+    display: block;
+    outline: 0px solid transparent;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    padding: 3em;
+    overflow-x: auto;
+    overflow-y: auto;
+    color: #EEE;
+    border: none;
+    resize: none;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
 }
 
 td {
-
-	color: #EEE;
-	padding: 0.1em;
-	padding-left: 1em;
-
+    color: #EEE;
+    padding: 0.1em;
+    padding-left: 1em;
 }
 
 td.line-number {
-
-	text-align: right;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	-o-user-select:none;
-	user-select: none;
+    text-align: right;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 td.line-number:hover {
-
-	background: #222;
-	cursor: pointer;
-
+    background: #222;
+    cursor: pointer;
 }
 
 td.line-number::before {
-
-	content: attr(data-line-number);
-	padding-right: 1em;
+    content: attr(data-line-number);
+    padding-right: 1em;
 }
 
 .helper {
-
-	padding: 0.7em;
-	font-size: 0.8em;
-	color: #BBB;
-
+    padding: 0.7em;
+    font-size: 0.8em;
+    color: #BBB;
 }
 
 .submit {
-
-	text-align: left;
-	text-decoration: none;
-	font-size: 0.8em;
-	color: #EEE;
-	background: transparent;
-	border: none;
-	font-family: "Fira Code", monospace;
-
+    text-align: left;
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #EEE;
+    background: transparent;
+    border: none;
+    font-family: "Fira Code", monospace;
 }
 
 .submit:hover {
-
-	cursor: pointer;
-
+    cursor: pointer;
 }
 
 footer {
-
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: flex-end;
-	min-height: 22px;
-	height: 2vh;
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	width: 100vw;
-	width: calc(var(--vw, 1vw) * 100);
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 22px;
+    height: 2vh;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    width: calc(var(--vw, 1vw) * 100);
 }
 
 .footer-text {
-
-	color: #AAA;
-	margin: 0 0.5em;
-
+    color: #AAA;
+    margin: 0 0.5em;
 }
 
 .footer-text a {
-
-	color: #AAA;
-	text-decoration: none;
-	font-weight: bold;
-	margin: 0 0.5em;
-
+    color: #AAA;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 0.5em;
 }
 
 .footer-keybindings {
-
-	margin-right: auto;
-	margin-left: 1.5em;
-
+    margin-right: auto;
+    margin-left: 1.5em;
 }
 
 .footer-github {
-
-	float: right;
-	color: #AAA;
-	fill: currentColor;
-	margin: 0 1.5em 0 0.4em;
-
+    float: right;
+    color: #AAA;
+    fill: currentColor;
+    margin: 0 1.5em 0 0.4em;
 }
 
 @media screen and (max-width: 720px) {
+    .controls {
+        flex: 1;
+    }
 
-	.controls {
+    .content {
+        flex: 5;
+        height: 100%;
+    }
 
-		flex: 1;
-
-	}
-
-	.content {
-
-		flex: 5;
-		height: 100%;
-
-	}
-
-	.footer-text {
-
-		display: none;
-
-	}
-
+    .footer-text {
+        display: none;
+    }
 }
