@@ -8,7 +8,7 @@ module.exports = (m, {isSnippet}) => {
                     "New snippet: Ctrl + Alt + A",
                 ],
             ),
-            " |",
+            " | ",
             m(
                 "button#actionButton.submit",
                 {
@@ -24,9 +24,8 @@ module.exports = (m, {isSnippet}) => {
             ),
         ),
 
-        m("code.footer-text", "Memochō |"),
         m("code.footer-text", [
-            "Built by",
+            "Memochō | Built by",
             m(
                 "a",
                 {

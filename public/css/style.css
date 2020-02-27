@@ -104,6 +104,7 @@ td.line-number::before {
     background: transparent;
     border: none;
     font-family: "Fira Code", monospace;
+    padding: 0;
 }
 
 .submit:hover {
