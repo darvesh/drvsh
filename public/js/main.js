@@ -43,22 +43,20 @@ function handleKeybindings(e) {
             e.preventDefault();
             return document.getElementById('actionButton').click();
         }
-    } else if (e.ctrlKey && e.altKey) {
+        if (e.altKey) {
+            if ((e.key === "n") || (e.key === "a")) {
+                // Ctrl + Alt + {N|A} -> New
+                e.preventDefault();
+                return document.getElementById('newButton').click();
+            }
 
-        if ((e.key === "n") || (e.key === "a")) {
-            // Ctrl + Alt + {N|A} -> New
-            e.preventDefault();
-            return document.getElementById('newButton').click();
+            if (e.key === "f") {
+                // Ctrl + Alt + F -> Fork
+                e.preventDefault();
+                return document.getElementById('actionButton').click();
+            }
         }
-
-        if (e.key === "f") {
-            // Ctrl + Alt + F -> Fork
-            e.preventDefault();
-            return document.getElementById('actionButton').click();
-        }
-
     }
-
 }
 
 function hashLineNumber(e) {
