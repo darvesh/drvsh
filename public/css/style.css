@@ -2,7 +2,7 @@ body {
 
 	padding: 0;
 	margin: 0;
-	background: #111;
+	background: #000;
 
 }
 
@@ -15,8 +15,8 @@ body {
 .container {
 
 	display: flex;
-	height: 95vh;
-	height: calc(var(--vh, 1vh) * 95);
+	height: 98vh;
+	height: calc(var(--vh, 1vh) * 98);
 	padding: 0;
 	margin: 0;
 	flex-direction: row-reverse;
@@ -115,8 +115,6 @@ td.line-number::before {
 
 .submit {
 
-	margin: 0.5em 0.5em 0.25em;
-	padding: 1em;
 	text-align: left;
 	font-weight: bold;
 	text-decoration: none;
@@ -140,14 +138,13 @@ footer {
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-end;
-	min-height: 32px;
-	height: 5vh;
+	min-height: 22px;
+	height: 2vh;
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
 	width: 100vw;
 	width: calc(var(--vw, 1vw) * 100);
-	background: #222;
 
 }
 
