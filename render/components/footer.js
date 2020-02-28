@@ -24,9 +24,14 @@ module.exports = (m, {isSnippet}) => {
             ),
             " ",
         ),
+        m("a#name-label", {
+            href: "https://github.com/mojurasu/memocho",
+            target: "blank",
+            rel: "noopener"
+        }, " Memochō"),
 
         m("code.footer-text", [
-            " Memochō  Built by",
+            " Built by",
             m(
                 "a",
                 {

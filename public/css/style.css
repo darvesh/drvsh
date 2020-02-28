@@ -93,7 +93,7 @@ td.line-number {
 }
 
 .code-row:target {
-   background-color: #e52a5736;
+    background-color: #e52a5736;
 }
 
 td.line-number:hover {
@@ -121,6 +121,7 @@ td.line-number::before {
 }
 
 footer {
+    color: #AAA;
     font-size: 0.8em;
     display: flex;
     flex-direction: row;
@@ -134,6 +135,13 @@ footer {
     width: 100vw;
     width: calc(var(--vw, 1vw) * 100);
     backdrop-filter: blur(5px);
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+#name-label {
+    color: #e52a57;
+    text-decoration: none;
 }
 
 .footer-text {
@@ -151,7 +159,6 @@ footer {
 .footer-keybindings {
     margin-right: auto;
     color: #EEE;
-    margin-left: 1.5em;
 }
 
 .submit:active {
@@ -188,11 +195,11 @@ footer {
         display: none;
     }
 
-    .footer-keybindings {
-        margin-left: auto;
+    .submit {
+        padding: 10px;
     }
 
-    .submit {
+    #name-label {
         padding: 10px;
     }
 
