@@ -5,7 +5,7 @@ module.exports = (m, {isSnippet}) => {
                 "a#newButton.submit",
                 {href: "/"},
                 [
-                    "New: Ctrl + Alt + A",
+                    "New Snippet", m("span.keyboard-shortcut", [": Ctrl + Alt + A"])
                 ],
             ),
             "  ",
@@ -19,8 +19,8 @@ module.exports = (m, {isSnippet}) => {
                     form: "codeSnippet",
                 },
                 isSnippet
-                    ? ["Fork: Ctrl + Alt + F"]
-                    : ["Save: Ctrl + S"],
+                    ? ["Fork", m("span.keyboard-shortcut", [": Ctrl + Alt + F"])]
+                    : ["Save", m("span.keyboard-shortcut", [": Ctrl + S"])],
             ),
             " ",
         ),

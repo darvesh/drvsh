@@ -184,6 +184,10 @@ footer {
         height: 5vh;
     }
 
+    .keyboard-shortcut {
+        display: none;
+    }
+
     .footer-keybindings {
         margin-left: auto;
     }
