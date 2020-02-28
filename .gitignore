@@ -2,3 +2,4 @@ node_modules
 custom
 .env
 .idea
+package-lock.json
