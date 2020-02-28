@@ -95,16 +95,10 @@ td.line-number::before {
     padding-right: 1em;
 }
 
-.helper {
-    padding: 0.7em;
-    font-size: 0.8em;
-    color: #BBB;
-}
-
 .submit {
     text-align: left;
     text-decoration: none;
-    font-size: 0.8em;
+    /*font-size: 0.8em;*/
     color: #EEE;
     background: transparent;
     border: none;
@@ -117,6 +111,7 @@ td.line-number::before {
 }
 
 footer {
+    font-size: 0.8em;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -146,13 +141,6 @@ footer {
     margin-right: auto;
     color: #EEE;
     margin-left: 1.5em;
-}
-
-.footer-github {
-    float: right;
-    color: #AAA;
-    fill: currentColor;
-    margin: 0 1.5em 0 0.4em;
 }
 
 .submit:active {

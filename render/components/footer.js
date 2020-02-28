@@ -5,7 +5,7 @@ module.exports = (m, {isSnippet}) => {
                 "a#newButton.submit",
                 {href: "/"},
                 [
-                    "New snippet: Ctrl + Alt + A",
+                    "New: Ctrl + Alt + A",
                 ],
             ),
             "  ",
