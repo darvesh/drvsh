@@ -33,7 +33,7 @@ code, #snippet {
 
 .loc, #snippet {
     width: 100%;
-    /*white-space: pre;*/
+    white-space: pre-wrap;
     word-wrap: normal;
     display: inline-block;
     word-break: normal;
