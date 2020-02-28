@@ -67,10 +67,15 @@ code, #snippet {
     tab-size: 4;
 }
 
+table {
+    border-collapse: collapse;
+    border: none;
+}
+
 td {
     color: #EEE;
     padding: 0.1em;
-    padding-left: 1em;
+    padding-left: 0.5em;
 }
 
 td.line-number {
@@ -83,16 +88,21 @@ td.line-number {
     -o-user-select: none;
     user-select: none;
     font-size: 9pt;
+    vertical-align: top;
+    padding-right: 10px;
+}
+
+.code-row:target {
+   background-color: #e52a5736;
 }
 
 td.line-number:hover {
-    background: #222;
+    background: #e52a5736;
     cursor: pointer;
 }
 
 td.line-number::before {
     content: attr(data-line-number);
-    padding-right: 1em;
 }
 
 .submit {
