@@ -42,6 +42,25 @@ function handleKeybindings(e) {
             // Ctrl + S -> Save
             e.preventDefault();
             return document.getElementById('actionButton').click();
+        } else if (e.key === "a") {
+            // Ctrl + A -> Only select snippet, by default the footer is selected too
+            // https://stackoverflow.com/a/987376
+            e.preventDefault();
+            let node = document.getElementById('snippet');
+            if (document.body.createTextRange) {
+                const range = document.body.createTextRange();
+                range.moveToElementText(node);
+                range.select();
+            } else if (window.getSelection) {
+                const selection = window.getSelection();
+                const range = document.createRange();
+                range.selectNodeContents(node);
+                selection.removeAllRanges();
+                selection.addRange(range);
+            } else {
+                console.warn("Could not select text in node: Unsupported browser.");
+            }
+            // return selection;
         }
         if (e.altKey) {
             if ((e.key === "n") || (e.key === "a")) {
