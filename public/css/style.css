@@ -163,6 +163,14 @@ footer {
 }
 
 @media screen and (max-width: 720px) {
+    .textarea {
+        padding: 0.5em;
+    }
+
+    .loc, #snippet {
+        white-space: pre;
+    }
+
     .controls {
         flex: 1;
     }
