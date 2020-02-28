@@ -42,7 +42,7 @@ function handleKeybindings(e) {
             // Ctrl + S -> Save
             e.preventDefault();
             return document.getElementById('actionButton').click();
-        } else if (e.key === "a") {
+        } else if (!binEditor && e.key === "a") {
             // Ctrl + A -> Only select snippet, by default the footer is selected too
             // https://stackoverflow.com/a/987376
             e.preventDefault();
