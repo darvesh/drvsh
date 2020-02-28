@@ -4,7 +4,7 @@ module.exports = (m, {content = '', language}) => {
     return m('table',
         m('tbody',
             hl
-                .highlightAuto(((content || "") + "\n\n"), language)
+                .highlightAuto(((content || "") + "\n"), language)
                 .value
                 .split('\n')
                 .map((line, index) => m('tr', [
