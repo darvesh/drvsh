@@ -1,8 +1,13 @@
+@font-face {
+  font-family: "Fira Code v2";
+  src: url("/FiraCode-Regular.ttf");
+}
+
 body {
     padding: 0;
     margin: 0;
     background: #000;
-    font-family: "Fira Code", monospace;
+    font-family: "Fira Code v2", monospace;
 }
 
 * {
@@ -22,7 +27,7 @@ body {
 
 code, #snippet {
     margin: 0;
-    font-family: "Fira Code", monospace;
+    font-family: "Fira Code v2", monospace;
     font-size: 10pt;
 }
 
@@ -103,7 +108,7 @@ td.line-number::before {
     color: #EEE;
     background: transparent;
     border: none;
-    font-family: "Fira Code", monospace;
+    font-family: "Fira Code v2", monospace;
     padding: 0;
 }
 
