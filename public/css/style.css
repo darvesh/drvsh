@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Fira Code v2";
-  src: url("/FiraCode-Regular.ttf");
+    font-family: "Fira Code v2";
+    src: url("/FiraCode-Regular.ttf");
 }
 
 body {
@@ -19,6 +19,7 @@ body {
 .container {
     display: flex;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     padding: 0;
     margin: 0;
     flex-direction: row-reverse;
