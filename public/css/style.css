@@ -125,6 +125,7 @@ footer {
     font-size: 0.8em;
     display: flex;
     position: fixed;
+    bottom: 0px;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
