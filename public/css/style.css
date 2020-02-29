@@ -124,6 +124,7 @@ footer {
     color: #AAA;
     font-size: 0.8em;
     display: flex;
+    position: fixed;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
@@ -140,6 +141,7 @@ footer {
     padding-right: 2em;
     padding-left: 2em;
 }
+
 /* Not nice but backdrop-filter isnt supported in Firefox
    and the footer would be unreadable */
 @-moz-document url-prefix(){
