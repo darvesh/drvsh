@@ -22,6 +22,20 @@ BIN_MONGO_CSTRING=mongodb://localhost:27017/bin-store \
 	npm start
 ```
 
+## Running in Docker
+
+Memochō supports running inside Docker through the provided Dockerfile. To build the image:
+
+```shell
+docker build -t mojurasu/memocho:latest --build-arg PORT=4000 --build-arg MONGO_CSTRING=mongodb://localhost:27017/bin-store .
+```
+
+Then run it as you would any other image:
+
+```shell
+docker run mojurasu/memocho:latest
+```
+
 ## Customising `Memochō`
 
 To customise your self-hosted version of `Memochō`, you can add these two files to `/custom` at the root directory:
