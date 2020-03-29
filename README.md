@@ -7,7 +7,7 @@ A lightweight pastebin/hastebin alternative with no hard frontend JS dependency.
 You know the drill:
 
 ```shell
-git clone https://github.com/MKRhere/bin
+https://github.com/solooo7/memocho
 cd bin
 npm install
 ```
