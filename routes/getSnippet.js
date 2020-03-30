@@ -5,7 +5,7 @@ module.exports = (req, res) => {
     const {models, mongoose} = req;
     const [id, language] = (req.params.id || '').split('.');
     const rawMode = Boolean(req.query.raw);
-    return models.snippets.findOne({_id: mongoose.Types.ObjectId(id)})
+    return models.snippets.findOne({URL: id})
         .then(doc => {
             if (!doc) {
                 res.status(404);
