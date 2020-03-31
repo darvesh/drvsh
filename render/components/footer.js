@@ -57,7 +57,7 @@ module.exports = (m, { isSnippet }) => {
 			m(
 				"a",
 				{
-					href: "https://github.com/solooo7/memocho",
+					href: "https://github.com/solooo7/drvsh",
 					target: "blank",
 					rel: "noopener"
 				},
