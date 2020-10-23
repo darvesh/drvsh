@@ -8,7 +8,7 @@ const generateUniqueURL = async req => {
 		customAlphabet("1234567890", getRandom())();
 	const exists = await req.models.snippets.exists({ URL });
 	if (!exists) return URL;
-	return generateUniqueURL();
+	return generateUniqueURL(req);
 };
 module.exports = async (req, res) => {
 	const content = req.rawText || req.body.snippet;
