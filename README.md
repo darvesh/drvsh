@@ -7,7 +7,7 @@ A lightweight pastebin/hastebin alternative with no hard frontend JS dependency.
 You know the drill:
 
 ```shell
-https://github.com/solooo7/drvsh
+https://github.com/darvesh/drvsh
 cd bin
 npm install
 ```
@@ -27,13 +27,13 @@ BIN_MONGO_CSTRING=mongodb://localhost:27017/bin-store \
 Memochō supports running inside Docker through the provided Dockerfile. To build the image:
 
 ```shell
-docker build -t solooo7/drvsh:latest --build-arg PORT=4000 --build-arg MONGO_CSTRING=mongodb://localhost:27017/bin-store .
+docker build -t darvesh/drvsh:latest --build-arg PORT=4000 --build-arg MONGO_CSTRING=mongodb://localhost:27017/bin-store .
 ```
 
 Then run it as you would any other image:
 
 ```shell
-docker run solooo7/drvsh:latest
+docker run darvesh/drvsh:latest
 ```
 
 ## Customising `drvsh`
