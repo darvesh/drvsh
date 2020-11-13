@@ -25,7 +25,7 @@ module.exports = (m, { isSnippet }) => {
 		m(
 			"a#name-label",
 			{
-				href: "https://github.com/solooo7",
+				href: "https://github.com/darvesh",
 				target: "blank",
 				rel: "noopener"
 			},
@@ -57,7 +57,7 @@ module.exports = (m, { isSnippet }) => {
 			m(
 				"a",
 				{
-					href: "https://github.com/solooo7/drvsh",
+					href: "https://github.com/darvesh/drvsh",
 					target: "blank",
 					rel: "noopener"
 				},
