@@ -12,19 +12,19 @@ cd bin
 npm install
 ```
 
-Start the app with the ENV variables:
+```bash
+cp example.config.js config.js
+```
+
+Fill in these ENV variables in `config.js`:
 + `BIN_MONGO_CSTRING`: your Mongo connection string.
 + `BIN_PORT`: port on which `bin` should listen to.
++ `URL`: https://your-domain.com
 
-```shell
-BIN_MONGO_CSTRING=mongodb://localhost:27017/bin-store \
-	BIN_PORT=4000 \
-	npm start
-```
 
 ## Running in Docker
 
-Memochō supports running inside Docker through the provided Dockerfile. To build the image:
+drvsh supports running inside Docker through the provided Dockerfile. To build the image:
 
 ```shell
 docker build -t darvesh/drvsh:latest --build-arg PORT=4000 --build-arg MONGO_CSTRING=mongodb://localhost:27017/bin-store .

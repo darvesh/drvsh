@@ -1,6 +1,3 @@
-module.exports = mongoose => ({
-
-    snippets: require('./snippets')(mongoose),
-
+module.exports = (mongoose) => ({
+	snippets: require("./snippets")(mongoose),
 });
-
