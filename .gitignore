@@ -3,4 +3,4 @@ custom
 .env
 .idea
 package-lock.json
-.config
+config.js
