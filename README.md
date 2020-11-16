@@ -1,10 +1,32 @@
-# drvsh
+<img src="https://img.techpowerup.org/201116/drvsh.png" alt="logo"/>
 
-A lightweight pastebin/hastebin alternative with no hard frontend JS dependency. Fork of [mojurasu/memocho](https://github.com/mojurasu/memocho) which is a fork of [mkr/bin](https://github.com/MKRhere/bin).
+> A lightweight pastebin/hastebin alternative with no hard frontend JS dependency. Fork of [mojurasu/memocho](https://github.com/mojurasu/memocho) which is a fork of [mkr/bin](https://github.com/MKRhere/bin).
+
+<br/>
+
+## Features
+* Minimal
+* Short and readable ID
+
+<br/>
+
+## API
+### Create New Snippet
+ 
+`POST /c`
+```bash
+curl -X POST -H "content-type:plain/text" -d "console.log('Hello World');"  localhost:1998/c
+```
+
+### Get snippet
+
+`GET /:id/raw`
+
+Returns raw string.
+
+<br/>
 
 ## Starting the app
-
-You know the drill:
 
 ```shell
 https://github.com/darvesh/drvsh
@@ -21,6 +43,7 @@ Fill in these ENV variables in `config.js`:
 + `BIN_PORT`: port on which `bin` should listen to.
 + `URL`: https://your-domain.com
 
+<br/>
 
 ## Running in Docker
 
@@ -35,6 +58,8 @@ Then run it as you would any other image:
 ```shell
 docker run darvesh/drvsh:latest
 ```
+
+<br/>
 
 ## Customising `drvsh`
 
