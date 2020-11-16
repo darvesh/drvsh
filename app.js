@@ -25,6 +25,7 @@ app.use(rawBody());
 app.use(mongoose());
 app.use(render());
 
+app.post(/^\/$|^\/c$/, createSnippet); // matches ["/", "/c"]
 app.get("/:id/raw", getRawSnippet);
 
 app.listen(BIN_PORT, () => console.log("Listening on port", BIN_PORT));
