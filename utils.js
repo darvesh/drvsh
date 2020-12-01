@@ -3,7 +3,7 @@ const { customAlphabet } = require("nanoid");
 const getRandom = (min = 1, max = 3) =>
 	parseInt(Math.random() * (max - min) + min);
 
-exports.generateUniqueURL = async (req) => {
+const generateUniqueURL = async (req) => {
 	const URL =
 		customAlphabet("ABCDEFGHIJKLMNOPQRSTUVWXYZ", getRandom())() +
 		customAlphabet("1234567890", getRandom())();
@@ -11,3 +11,5 @@ exports.generateUniqueURL = async (req) => {
 	if (!exists) return URL;
 	return generateUniqueURL(req);
 };
+
+exports.generateUniqueURL = generateUniqueURL;
