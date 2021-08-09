@@ -131,6 +131,7 @@ footer {
     justify-content: flex-end;
     min-height: 30px;
     height: 3vh;
+    position: absolute;
     bottom: 0px;
     left: 0px;
     width: 100vw;
